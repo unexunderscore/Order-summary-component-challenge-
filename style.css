@@ -48,3 +48,13 @@ body {
     display: block;
     margin: auto;
   }
+
+  .cardInside {
+      width: 70%;
+      margin: auto;
+      text-align: center;
+  }
+
+  .cardInside h1 {
+      color: hsl(223, 47%, 23%);
+  }
