@@ -18,6 +18,7 @@
 body {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
+    background-color:#dfe6fb;
     
 }
 
@@ -25,15 +26,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
+
+
 
 .card{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 25px;
-    width: 25rem;
-    height: 40rem;
+    width: 28rem;
+    height: 42rem;
     background-color: white;
 }
 
@@ -50,32 +53,81 @@ body {
   }
 
   .cardInside {
-      width: 70%;
+      width: 75%;
       margin: auto;
       text-align: center;
   }
 
-  .cardInside h1 {
+  .cardInside h2 {
+      padding-top: 1.5rem;
       color: hsl(223, 47%, 23%);
+      font-weight: 900;
+      font-size: 30px;
+      margin-bottom: 1rem;
   }
-
+  .card-details {
+    padding-bottom: 2.5rem;
+    color: hsl(224, 23%, 55%);
+  }
   .music-icon {
       height: 40px;
       vertical-align: middle;
+      padding-right: 1rem;
   }
 
   .card-annual {
       display: flex;
+      justify-content: space-between;
+      background-color:hsl(225, 100%, 98%);
+      padding: 1.5rem 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      align-items: center;
+    
+  }
+.plan-text{
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.plan-price {
+    color:hsl(224, 23%, 55%);
+}
+.iconAndAnnual{
+    display: flex;
+}
+
+.link-cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: inherit; /* no underline */
+    font-weight: 600;
   }
 
-  .link-cancel {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-  }
+.link-cancel:hover{
+    color:hsl(223, 47%, 23%);
+}  
+.link-change{
+    color:#382ae1;
+    font-weight: 500;
+}
+
+.link-change:hover{
+    color: hsl(224, 23%, 55%);
+    text-decoration: inherit;  
+}
+
+.card-annual a:visited{
+    color:#382ae1;
+}
+.card-annual a:visited:hover{
+    color: hsl(224, 23%, 55%);
+    text-decoration: inherit; 
+}
 
   .btn-pay {
+    font-weight: 900;
+    font-size: 0.9rem;
     border: none;
-    background-color:hsl(223, 47%, 23%);
+    background-color:#382ae1;
     color: white;
     border-radius: 10px;
     width: 100%;
@@ -83,9 +135,12 @@ body {
     text-align: center;
     font-weight: 900;
     display: inline-block;
-    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-bottom: 1.5rem;
   }
 
   .btn-pay:hover {
     cursor: pointer;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    background-color:hsl(224, 23%, 55%)
   }
